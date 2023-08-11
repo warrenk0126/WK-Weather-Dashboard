@@ -4,32 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Weather Dashboard</title>
+  <title>WK | Weather Dashboard</title>
 </head>
 <body>
+  <!-- Container for entire page -->
   <div class="container">
+    <!-- Header section -->
     <header class="header">
-      <h1>WK Weather Dashboard</h1>
+       <!-- Title of dashboard -->
+      <h1>WK's Weather Dashboard</h1>
     </header>
-    <section class="search-form">
-      <form id="search-form">
+
+    <!-- Search Form section -->
+    <section class="search-box">
+      <form id="search-box"> <!-- Form for searching cities -->
         <input type="text" id="city-input" class="search-input" placeholder="Enter a city name">
         <button type="submit" class="search-button">Search</button>
       </form>
     </section>
+
+    <!-- Current Weather section -->
     <section class="current-weather">
-      <h2>Current Weather:</h2>
-      <div id="current-weather" class="weather-card"></div>
+      <h2>Current Weather</h2> <!-- Current Weather section -->
+      <div id="current-weather" class="weather-card"></div> <!-- Container for displaying current weather -->
     </section>
+
+    <!-- 5-Day Forecast section -->
     <section class="forecast">
-      <h2>5-Day Forecast:</h2>
-      <div id="forecast" class="weather-card"></div>
+      <h2>5-Day Forecast</h2> <!-- Forecast section -->
+      <div id="forecast" class="weather-card"></div> <!-- Container for displaying forecast data -->
     </section>
+
+    <!-- Search History section -->
     <section class="search-history">
-      <h2>Search History:</h2>
-      <div id="search-history" class="history"></div>
+      <h2>Search History</h2> <!-- Search History section -->
+      <div id="search-history" class="history"></div> <!-- Container for displaying search history -->
     </section>
   </div>
+
+  <!-- JavaScript code -->
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
